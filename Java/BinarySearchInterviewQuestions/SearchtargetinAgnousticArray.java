@@ -26,10 +26,7 @@ class SearchTargetInAgnosticArray{
         if(leftArr!=-1){
                     return leftArr;
         }
-        else{
-            int RightArr=binarySearchAgnostic(arr, index,arr.length-1,target);
-            return RightArr;
-        }
+        return   binarySearchAgnostic(arr, index,arr.length-1,target);
        
     }
     private static int binarySearchAgnostic(int[] arr,int start,int end,int target){
